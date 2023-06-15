@@ -1,6 +1,9 @@
+package com.example.aulaseekbar;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -36,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    public void recuperarProgresso(View view){
+        textResultado.setText("Escolhido "+ seekBarEscala.getProgress());
     }
 
 }
