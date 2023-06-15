@@ -1,4 +1,39 @@
-public void dialog(View view){
+
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.DialogInterface;
+import android.os.Bundle;
+
+import android.view.View;
+
+import android.widget.CheckBox;
+import android.widget.ImageView;
+
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.github.chrisbanes.photoview.PhotoView;
+
+public class MainActivity extends AppCompatActivity {
+
+
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+
+    }
+
+    public void dialog(View view){
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
 
         //configurar titulo e mensagem
@@ -27,3 +62,7 @@ public void dialog(View view){
 
 
     }
+
+
+
+}
